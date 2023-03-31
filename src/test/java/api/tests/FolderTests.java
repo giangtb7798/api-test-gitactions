@@ -32,6 +32,5 @@ public class FolderTests extends BaseTest {
         folderSteps
                 .when_deleteFolder(folderResponse.getId())
                 .validateResponse(HttpURLConnection.HTTP_OK);
-
     }
 }
