@@ -25,6 +25,7 @@ public class FolderTests extends BaseTest {
         folderSteps
                 .when_deleteFolder(folderResponse.getId())
                 .validateResponse(HttpURLConnection.HTTP_OK);
+
     }
     @Test(description = "get folder successfully")
     public void get_folder_successfully() throws Exception {
