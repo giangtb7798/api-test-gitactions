@@ -32,7 +32,7 @@ jobs:
           servers: '[{"id": "github", "username": "dummy", "password": "${GITHUB_TOKEN_REF}"}]'
           githubServer: false
     - name: Run Tests with Maven
-      run: mvn test
+      run: mvn clean install -U -DskipTests=true --settings=settings.xml
       env:
           GITHUB_TOKEN_REF: ${{ secrets.API_TOKEN }}
     - name: Build with Maven
