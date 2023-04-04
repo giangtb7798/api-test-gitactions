@@ -27,7 +27,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn clean install -U -DskipTests=true --settings=settings.xml
       env:
         GITHUB_TOKEN: ${{secrets.API_TOKEN}}
     - name: Run test 
