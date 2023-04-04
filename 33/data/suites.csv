@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Apr 03 11:02:43 GMT 2023","Mon Apr 03 11:02:49 GMT 2023","6645","Setel Regression Suite","Setel Admin test on chrome","api.tests.FolderTests","api.tests.FolderTests","get_folder_successfully","get folder successfully",""
-"failed","Mon Apr 03 11:02:43 GMT 2023","Mon Apr 03 11:02:48 GMT 2023","5283","Setel Regression Suite","Setel Admin test on chrome","api.tests.FolderTests","api.tests.FolderTests","delete_folder_successfully","verify that delete folder successfully",""
