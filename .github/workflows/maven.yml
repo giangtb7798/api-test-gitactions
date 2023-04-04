@@ -27,6 +27,11 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
         cache: maven
+    - name: maven-settings-xml-action
+      uses: whelk-io/maven-settings-xml-action@v20
+      with:
+        repositories: '[{ "id": "central", "url": "https://repo1.maven.org/maven2" }, { "id": "github", "url": "https://maven.pkg.github.com/giangtb7798/api-core" }]'
+        servers: '[{ "id": "github", "username": "giangtb7798", "password": "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" }]'
     - name: Build with Maven
       run: mvn clean install -U -DskipTests=true --settings=settings.xml
       env:
