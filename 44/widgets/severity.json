@@ -1,0 +1,1 @@
+[{"uid":"a794a3feef42031d","name":"get folder successfully","time":{"start":1680593283760,"stop":1680593289377,"duration":5617},"status":"passed","severity":"normal"},{"uid":"7bc788c59cb842d9","name":"verify that delete folder successfully","time":{"start":1680593283757,"stop":1680593288109,"duration":4352},"status":"passed","severity":"normal"}]
