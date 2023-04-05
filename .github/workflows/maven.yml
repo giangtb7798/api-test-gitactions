@@ -57,7 +57,7 @@ jobs:
               {
                 "id": "github",
                 "username": "giangtb7798",
-                "password": "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"
+                "password": "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"
               }
             ]
           output_file: .m2/settings.xml
