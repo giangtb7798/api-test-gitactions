@@ -57,7 +57,7 @@ jobs:
               {
                 "id": "github",
                 "username": "giangtb7798",
-                "password": "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"
+                "password": "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"
               }
             ]
     - name: Build with Maven
