@@ -29,6 +29,8 @@ jobs:
         server-password: ${{ secrets.API_TOKEN }}
         distribution: 'temurin'
         cache: maven
+    - name: Download dependency
+      run: mvn dependency:get -Dartifact=api-core:my-dependency:1.0-SNAPSHOT -DrepoUrl=https://maven.pkg.github.com/giangtb7798/api-core
     - name: Build with Maven
       run: mvn clean install -U -DskipTests=true
     - name: Run test 
