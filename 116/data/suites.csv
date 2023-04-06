@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Apr 06 09:44:58 GMT 2023","Thu Apr 06 09:45:05 GMT 2023","6445","Setel Regression Suite","Setel Admin test on chrome","api.tests.FolderTests","api.tests.FolderTests","get_folder_successfully","get folder successfully",""
