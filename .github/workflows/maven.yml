@@ -13,6 +13,7 @@ on:
     inputs:
         api-group:
             description: "API_GROUP"
+  pull_request:
 jobs:
   build:
 
