@@ -9,11 +9,10 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
   workflow_dispatch:
+    inputs:
+        api-group:
+            description: "API_GROUP"
 jobs:
   build:
 
@@ -38,7 +37,7 @@ jobs:
         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
         
     - name: Run test 
-      run: mvn test
+      run: mvn test "-DclickUpAPI.group=${{github.event.inputs.api-group}}" 
 
     - name: Get Allure history
       uses: actions/checkout@v2
