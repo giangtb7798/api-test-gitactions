@@ -27,7 +27,7 @@ public class FolderTests extends BaseTest {
                 .validateResponse(HttpURLConnection.HTTP_OK);
 
     }
-    @Test(description = "get folder successfully")
+    @Test(description = "get folder successfully", groups={"FolderTests"})
     public void get_folder_successfully() throws Exception {
         String name = "study";
         FolderInput folderInput = new FolderInput(name);
